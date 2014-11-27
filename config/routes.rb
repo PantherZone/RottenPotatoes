@@ -2,6 +2,10 @@ Rottenpotatoes::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
+  root :to => 'movies#index'
+
+  resources :movies
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
@@ -12,7 +16,6 @@ Rottenpotatoes::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-  resources :movies
 
   # Sample resource route with options:
   #   resources :products do
